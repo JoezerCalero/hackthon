@@ -675,6 +675,31 @@ header {
     max-width: 340px;
   }
 }
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para tablets y móviles */
+}
+
+@media (max-width: 480px) {
+  /* Estilos específicos para teléfonos */
+}
 
 @media (max-width: 600px) {
   .hero,
